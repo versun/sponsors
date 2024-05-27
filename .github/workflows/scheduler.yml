@@ -17,6 +17,8 @@ jobs:
         with:
           node-version: lts/*
 
+      - run: npm i
+
       - name: Update sponsors
         run: npm run build
         env:
