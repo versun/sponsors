@@ -23,7 +23,7 @@ jobs:
       - run: corepack enable && pnpm i
 
       - name: Update sponsors
-        run: npm run build .
+        run: npm run build
         env:
           SPONSORKIT_GITHUB_LOGIN: versun
           SPONSORKIT_GITHUB_TOKEN: ${{ secrets.SPONSORKIT_GITHUB_TOKEN }}
