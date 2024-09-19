@@ -4,8 +4,7 @@ If my code has helped you, please consider sponsoring me
 
 ### Recurring Donation
 
--   Become a Sponser on [Open Collective](https://opencollective.com/rsstranslator)
--   Become a Sponser on [爱发电](https://afdian.com/@versun)
+-   Become a Sponser on [Github](https://github.com/sponsors/versun) / [Open Collective](https://opencollective.com/rsstranslator) / [爱发电](https://afdian.com/@versun) 
 -   Contact me directly: [github@versun.me](mailto:github@versun.me)
 
 Thank you for your support!
