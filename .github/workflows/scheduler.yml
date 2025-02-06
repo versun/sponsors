@@ -19,8 +19,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
+          cache: pnpm
       
-      - run: corepack enable && pnpm i
+      - run: pnpm i
 
       - name: Update sponsors
         run: npm run build
