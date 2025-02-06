@@ -13,17 +13,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v3
+      - uses: pnpm/action-setup@v4
 
       - name: Set node
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
-
+      
       - run: corepack enable && pnpm i
 
       - name: Update sponsors
-        run: pnpm exec sponsorkit --dir .
+        run: npm run build
         env:
           SPONSORKIT_GITHUB_LOGIN: versun
           SPONSORKIT_GITHUB_TOKEN: ${{ secrets.SPONSORKIT_GITHUB_TOKEN }}
@@ -35,7 +35,7 @@ jobs:
           #SPONSORKIT_POLAR_TOKEN: ${{ secrets.SPONSORKIT_POLAR_TOKEN }}
 
       - name: Commit
-        uses: EndBug/add-and-commit@v5
+        uses: EndBug/add-and-commit@v9
         with:
           message: 'chore: update sponsors.svg'
           add: 'sponsors.*'
