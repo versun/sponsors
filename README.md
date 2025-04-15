@@ -15,6 +15,10 @@ Thank you for your support!
   </a>
 </p>
 
+Additional Sponsors
+- YYYoung
+- piglei
+
 ## Thanks
 
 Built with [SponsorKit](https://github.com/antfu/sponsorkit).
